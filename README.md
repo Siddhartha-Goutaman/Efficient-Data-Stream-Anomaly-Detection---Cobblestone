@@ -60,5 +60,20 @@ In this method, the mean and standard deviations are calculated each time for th
 
 Welford's algorithm is an algorithm used to compute mean and standard deviation in a single pass, in an incremental manner.
 This makes the process more efficient than computing the mean and standard deviation each time for a particular set of data.
+
 In the Welford's method, a recurrence relation is required between the quantities.
-{\displaystyle {\bar {x}}_{n}={\frac {(n-1)\,{\bar {x}}_{n-1}+x_{n}}{n}}={\bar {x}}_{n-1}+{\frac {x_{n}-{\bar {x}}_{n-1}}{n}}}
+The recurrence relations for mean and variance are given as shown below:
+
+\bar{x}_{n} = \bar{x}_{n-1} +\frac{x_{n}-\bar{x}_{n-1}}{n}
+
+\sigma_{n}^{2} = \sigma_{n-1}^{2} + \frac{(x_{n}-\bar{x}_{n-1})(x_{n}-\bar{x}_{n})-\sigma^{2}_{n-1}}{n}
+
+## Requirements
+
+The scripts use minimum external libraries. Only a total of at most 5 libraries are used in the scripts, of which only 3 are external libraries which are - NumPy for calculation of statistical values, Matplotlib for visualisation of data and statsmodel for integration of ARIMA model in the anomaly detection. 
+
+The libraries may be already installed in the system, since they are basic libraries used in data visualisation. In case they are not present, do install the libraries using the requirements.txt file by typing in the following command in your terminal.
+
+``` pip install -r requirements.txt ```
+
+
