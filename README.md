@@ -5,9 +5,9 @@ The project demanded the development of a Python script for anomaly detection in
 
 The project was successfully completed using 3 different algorithms and 2 methods for statistical calculations. 
 The algorithms used in anomaly detection are:
-  a. Z-score based detection
-  b. EWMA (Exponentially Weight Moving Average) 
-  c. ARIMA (Auto-Regressive Integrated Moving Average)
+  1. Z-score based detection
+  2. EWMA (Exponentially Weight Moving Average) 
+  3. ARIMA (Auto-Regressive Integrated Moving Average)
 
 A more detailed explanation of the different algorithms is as follows:
 
