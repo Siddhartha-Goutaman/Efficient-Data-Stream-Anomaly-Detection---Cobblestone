@@ -25,4 +25,12 @@ EWMA is calculated with the formula:
 
 $`EWMA = α * data + (1-α) EWMA(t-1)`$ , where EWMA(t-1) denotes the previous EWMA value.
 
+Using this method, an anomaly if flagged(printed) if | EWMA - data | is greater than a set threshold.
+
+### Why EWMA?
+
+EWMA places more weight on recent data points, which makes it more adaptive to concept drift or changes in the data stream over time. Furthermore, it helps smooth out the random noise in the data, making it easier to detect significant deviations.
+
+##
+
 
