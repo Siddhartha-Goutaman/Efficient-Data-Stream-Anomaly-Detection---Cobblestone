@@ -1,4 +1,4 @@
-# Efficient-Data-Stream-Anomaly-Detection---Cobblestone
+# Efficient Data Stream Anomaly Detection-Cobblestone
 Research project by Siddhartha Goutaman as part of job application to Cobblestone.
 
 The project demanded the development of a Python script for anomaly detection in continuously streamed data - simulating real-time sequences of financial transactions or system metrics.
