@@ -12,11 +12,17 @@ The algorithms used in anomaly detection are:
 A more detailed explanation of the different methods is as follows
 ## Z-score based detection
 This method makes use of the z-score which is a statistical measure that describes how far a particular data point is from the mean of the data, measured in standard deviations. It is calculated as: 
+
 $`\frac{x-μ}{σ}`$
+
 If the z-score is very high (or very low), it may indicate an anomaly, because the point is far from the expected normal range. Hence, using this method, we flag (or print) the data points that have deviation higher than a particular threshold (3σ) in the script provided.
 
 ## EWMA based detection
 Unlike z-score, EWMA or Exponentially Weight Moving Average detects anomalies by giving higher weight on more recent data points, instead of relying on the mean or standard deviation directly. Thus this method works better in cases of recent changes. 
+
 EWMA uses a smoothing factor α to control how much weight is given to recent observations vs. older observations. A lower α gives more weight to past values, while a higher α focuses more on recent values. 
 EWMA is calculated with the formula:
-$`EWMA = α * data + (1-α) EWMA(t-1)`$ where EWMA(t-1) denotes the previous EWMA value.
+
+$`EWMA = α * data + (1-α) EWMA(t-1)`$ , where EWMA(t-1) denotes the previous EWMA value.
+
+
