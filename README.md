@@ -10,5 +10,5 @@ The algorithms used in anomaly detection are:
   c. ARIMA (Auto-Regressive Integrated Moving Average)
 
 A more detailed explanation of the different methods is as follows
-# Z-score based detection
+## Z-score based detection
 This method makes use of the z-score which is a statistical measure that describes how far a particular data point is from the mean of the data, measured in standard deviations. It's calculated as: $`\frac{x-μ}{σ}`$
