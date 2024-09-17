@@ -64,9 +64,9 @@ This makes the process more efficient than computing the mean and standard devia
 In the Welford's method, a recurrence relation is required between the quantities.
 The recurrence relations for mean and variance are given as shown below:
 
-\bar{x}_{n} = \bar{x}_{n-1} +\frac{x_{n}-\bar{x}_{n-1}}{n}
+$`\bar{x}_{n} = \bar{x}_{n-1} +\frac{x_{n}-\bar{x}_{n-1}}{n}`$
 
-\sigma_{n}^{2} = \sigma_{n-1}^{2} + \frac{(x_{n}-\bar{x}_{n-1})(x_{n}-\bar{x}_{n})-\sigma^{2}_{n-1}}{n}
+$`\sigma_{n}^{2} = \sigma_{n-1}^{2} + \frac{(x_{n}-\bar{x}_{n-1})(x_{n}-\bar{x}_{n})-\sigma^{2}_{n-1}}{n}`$
 
 ## Requirements
 
